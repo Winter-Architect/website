@@ -15,7 +15,7 @@
           <NuxtLink to="team">Notre équipe</NuxtLink>
         </li>
         <li class="font-semibold">
-          <NuxtLink to="projects">Nos projets</NuxtLink>
+          <NuxtLink to="games">Nos jeux</NuxtLink>
         </li>
         <li class="font-semibold">
           <NuxtLink to="story">Notre histoire</NuxtLink>

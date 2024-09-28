@@ -1,6 +1,8 @@
 <template>
   <div>
     <Navbar />
-    <slot />
+    <div class="flex flex-col items-center">
+      <slot />
+    </div>
   </div>
 </template>
