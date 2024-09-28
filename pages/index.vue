@@ -1,3 +1,3 @@
 <template class="dark bg-[#22333B]">
-  <Navbar />
+  <h1>acceuil</h1>
 </template>
