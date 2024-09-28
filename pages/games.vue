@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center">
+  <div class="flex flex-col items-center p-10">
     <h1 class="text-3xl font-bold text-pearl-bush-100 pb-12">Nos Jeux</h1>
 
     <div class="w-[90vw] text-outer-space-900 bg-pearl-bush-100 p-5">
@@ -15,14 +15,16 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ab
             vel similique in dolorem. Saepe?
           </p>
-          <button
-            class="text-pearl-bush-100 bg-outer-space-950 hover:bg-outer-space-800 transition hover:rotate-[360deg] duration-700 p-3 mt-7 w-[15vw] text-lg rounded-md"
-          >
-            Download now!
-          </button>
+          <Button>Download now!</Button>
         </div>
       </div>
       <Statistiques />
+      <Timeline />
+      <Ressources />
+      <div class="flex flex-wrap gap-10 items-center justify-center pt-10">
+        <Button to="https://example.com">Jouez dès maintenant!</Button>
+        <Button to="https://example.com">Téléchargez le rapport</Button>
+      </div>
     </div>
   </div>
 
