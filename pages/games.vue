@@ -2,7 +2,9 @@
   <div class="flex flex-col items-center p-10">
     <h1 class="text-3xl font-bold text-pearl-bush-100 pb-12">Nos Jeux</h1>
 
-    <div class="w-[90vw] text-outer-space-900 bg-pearl-bush-100 p-5">
+    <div
+      class="w-[90vw] text-outer-space-900 bg-pearl-bush-100 p-5 flex flex-col items-center"
+    >
       <div class="flex">
         <img src="https://placehold.co/500x300" alt="placeholder" />
         <div class="m-5">

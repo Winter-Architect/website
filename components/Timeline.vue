@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="text-2xl font-semibold pt-10 pb-3">Timeline</h1>
+    <h1 class="text-2xl font-semibold pt-10 pb-3 w-[80vw]">Timeline</h1>
     <div class="relative">
       <!-- Timeline line -->
       <div class="absolute left-0 w-full h-1 bg-outer-space-950 top-4"></div>

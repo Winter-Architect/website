@@ -1,9 +1,10 @@
-import { theme } from "#tailwind-config";
-
 module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      backgroundColor: {
+        default: "#22333b",
+      },
       colors: {
         "pearl-bush": {
           "50": "#f9f6f3",
