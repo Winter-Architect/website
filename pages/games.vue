@@ -25,7 +25,9 @@
       <Ressources />
       <div class="flex flex-wrap gap-10 items-center justify-center pt-10">
         <Button to="https://example.com">Jouez dès maintenant!</Button>
-        <Button to="https://example.com">Téléchargez le rapport</Button>
+        <Button pdfUrl="/docs/FINAL.pdf"
+          >Téléchargez le cahier des charges</Button
+        >
       </div>
     </div>
   </div>

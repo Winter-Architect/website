@@ -1,8 +1,8 @@
 <template>
   <div class="text-pearl-bush-100 w-[80vw]">
-    <div class="flex flex-col items-center mb-10">
+    <div class="flex flex-col items-center mb-10 mt-[6vh]">
+      <img src="/logo_light_bold.png" alt="logo" class="w-[10rem] my-2" />
       <h1 class="text-[3rem] font-bold">Winter Architect</h1>
-      <img src="/logo_light_bold.png" alt="logo" class="w-[10rem] mt-2" />
       <!-- <p class="text-[1.5rem] mt-2">A full team of developers!</p> -->
     </div>
 
