@@ -1,11 +1,11 @@
 <template>
-  <div class="flex flex-col items-center p-10">
+  <div class="flex flex-col items-center mt-[20vh]">
     <h1 class="text-3xl font-bold text-pearl-bush-100 pb-12">Nos Jeux</h1>
 
     <div
       class="w-[90vw] text-outer-space-900 bg-pearl-bush-100 p-5 flex flex-col items-center"
     >
-      <div class="flex">
+      <div class="flex flex-col md:flex-row">
         <img src="https://placehold.co/500x300" alt="placeholder" />
         <div class="m-5">
           <h1 class="text-3xl font-semibold pb-5">Blackout</h1>
@@ -23,7 +23,7 @@
       <Statistiques />
       <Timeline />
       <Ressources />
-      <div class="flex flex-wrap gap-10 items-center justify-center pt-10">
+      <div class="flex flex-wrap md:gap-10 items-center justify-center pt-10">
         <Button to="https://example.com">Jouez dès maintenant!</Button>
         <Button pdfUrl="/docs/FINAL.pdf"
           >Téléchargez le cahier des charges</Button
