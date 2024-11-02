@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mt-[20vh]">
     <Presentation number="1" name="Notre Origine">
       <p class="indent-8">
         En tant que groupe de jeunes étudiants, nous avons décidé de nous ouvrir

@@ -1,16 +1,54 @@
 <template>
   <nav
-    class="bg-pearl-bush-100 text-[#0A0908] p-5 mb-10 rounded-b-md flex items-center justify-between transition-all duration-500 ease-in-out hover:shadow-md"
+    class="fixed w-[100vw] z-50 bg-pearl-bush-100 text-[#0A0908] p-5 mb-10 rounded-b-md transition-all duration-500 ease-in-out hover:shadow-md"
   >
-    <NuxtLink
-      to="/"
-      class="flex items-center justify-evenly w-[20vw] xl:w-[10vw] transform transition-transform duration-300 ease-in-out hover:scale-110"
+    <!-- En-tête fixe avec Logo et Bouton -->
+    <div class="flex items-center justify-between">
+      <NuxtLink
+        to="/"
+        class="flex items-center space-x-2 transform transition-transform duration-300 ease-in-out hover:scale-110"
+      >
+        <img src="/logo_dark_bold.png" alt="logo" width="45" height="45" />
+        <h1 class="font-bold">Winter Architect</h1>
+      </NuxtLink>
+
+      <!-- Bouton Menu Mobile -->
+      <button
+        @click="toggleMenu"
+        class="lg:hidden focus:outline-none p-2 rounded-md hover:bg-gray-200 transition-colors duration-200"
+        aria-label="Toggle Menu"
+      >
+        <div class="w-6 h-5 relative flex flex-col justify-between">
+          <span
+            class="w-full h-0.5 bg-gray-800 rounded-full transform transition-all duration-300"
+            :class="{ 'rotate-45 translate-y-2': isOpen }"
+          ></span>
+          <span
+            class="w-full h-0.5 bg-gray-800 rounded-full transition-all duration-300"
+            :class="{ 'opacity-0': isOpen }"
+          ></span>
+          <span
+            class="w-full h-0.5 bg-gray-800 rounded-full transform transition-all duration-300"
+            :class="{ '-rotate-45 -translate-y-2': isOpen }"
+          ></span>
+        </div>
+      </button>
+    </div>
+
+    <!-- Menu Navigation avec Animation -->
+    <div
+      class="lg:block lg:mt-0 overflow-hidden transition-all duration-300 ease-in-out"
+      :style="{
+        maxHeight: isOpen ? `${menuHeight}px` : '0px',
+        opacity: isOpen ? '1' : '0',
+        visibility: isOpen ? 'visible' : 'hidden',
+        marginTop: isOpen ? '1rem' : '0',
+      }"
+      ref="menuRef"
     >
-      <img src="/logo_dark_bold.png" alt="logo" width="45" height="45" />
-      <h1 class="font-bold">Winter Architect</h1>
-    </NuxtLink>
-    <div>
-      <ul class="flex items-center justify-evenly w-[50vw] xl:w-[40vw]">
+      <ul
+        class="flex flex-col lg:flex-row lg:items-center lg:justify-end space-y-4 lg:space-y-0 lg:space-x-8 py-2"
+      >
         <li class="text-[#0A0908] font-semibold">
           <NuxtLink
             to="/"
@@ -18,9 +56,10 @@
               'text-outer-space-900 underline underline-offset-8':
                 $route.path === '/',
             }"
-            class="relative transition-all duration-300 ease-in-out hover:text-outer-space-900 hover:underline hover:underline-offset-8"
+            class="relative block transition-all duration-300 ease-in-out hover:text-outer-space-900 hover:underline hover:underline-offset-8"
+            @click="closeMenu"
           >
-            Acceuil
+            Accueil
           </NuxtLink>
         </li>
         <li class="font-semibold">
@@ -30,7 +69,8 @@
               'text-outer-space-900 underline underline-offset-8':
                 $route.path === '/team',
             }"
-            class="relative transition-all duration-300 ease-in-out hover:text-outer-space-900 hover:underline hover:underline-offset-8"
+            class="relative block transition-all duration-300 ease-in-out hover:text-outer-space-900 hover:underline hover:underline-offset-8"
+            @click="closeMenu"
           >
             Notre équipe
           </NuxtLink>
@@ -42,7 +82,8 @@
               'text-outer-space-900 underline underline-offset-8':
                 $route.path === '/games',
             }"
-            class="relative transition-all duration-300 ease-in-out hover:text-outer-space-900 hover:underline hover:underline-offset-8"
+            class="relative block transition-all duration-300 ease-in-out hover:text-outer-space-900 hover:underline hover:underline-offset-8"
+            @click="closeMenu"
           >
             Nos jeux
           </NuxtLink>
@@ -54,7 +95,8 @@
               'text-outer-space-900 underline underline-offset-8':
                 $route.path === '/story',
             }"
-            class="relative transition-all duration-300 ease-in-out hover:text-outer-space-900 hover:underline hover:underline-offset-8"
+            class="relative block transition-all duration-300 ease-in-out hover:text-outer-space-900 hover:underline hover:underline-offset-8"
+            @click="closeMenu"
           >
             Notre histoire
           </NuxtLink>
@@ -63,3 +105,47 @@
     </div>
   </nav>
 </template>
+
+<script setup>
+const isOpen = ref(false);
+const menuRef = ref(null);
+const menuHeight = ref(0);
+
+// Calcule la hauteur du menu pour l'animation
+const updateMenuHeight = () => {
+  if (menuRef.value) {
+    menuHeight.value = menuRef.value.scrollHeight;
+  }
+};
+
+// Toggle menu avec mise à jour de la hauteur
+const toggleMenu = () => {
+  if (!isOpen.value) {
+    isOpen.value = true;
+    nextTick(() => {
+      updateMenuHeight();
+    });
+  } else {
+    isOpen.value = false;
+  }
+};
+
+// Ferme le menu (utile pour les liens)
+const closeMenu = () => {
+  isOpen.value = false;
+};
+
+// Met à jour la hauteur si la fenêtre est redimensionnée
+onMounted(() => {
+  window.addEventListener("resize", updateMenuHeight);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener("resize", updateMenuHeight);
+});
+
+// Initialise la hauteur
+onMounted(() => {
+  updateMenuHeight();
+});
+</script>

@@ -1,7 +1,7 @@
 <template>
   <NuxtLink v-if="to" :to="to" class="inline-block">
     <button
-      class="text-pearl-bush-100 bg-outer-space-950 hover:bg-outer-space-800 transition-all duration-200 p-3 mt-7 w-[15vw] text-lg rounded-md transform hover:scale-105 hover:shadow-glow active:scale-95"
+      class="text-pearl-bush-100 bg-outer-space-950 hover:bg-outer-space-800 transition-all duration-200 p-3 mt-7 md:w-[15vw] text-lg rounded-md transform hover:scale-105 hover:shadow-glow active:scale-95"
     >
       <slot />
     </button>

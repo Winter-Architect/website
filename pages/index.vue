@@ -1,8 +1,8 @@
 <template>
-  <div class="text-pearl-bush-100 w-[80vw]">
+  <div class="text-pearl-bush-100 w-[80vw] mt-[15vh]">
     <div class="flex flex-col items-center mb-10 mt-[6vh]">
       <img src="/logo_light_bold.png" alt="logo" class="w-[10rem] my-2" />
-      <h1 class="text-[3rem] font-bold">Winter Architect</h1>
+      <h1 class="text-3xl md:text-[3rem] pt-5 font-bold">Winter Architect</h1>
       <!-- <p class="text-[1.5rem] mt-2">A full team of developers!</p> -->
     </div>
 
@@ -25,7 +25,9 @@
         Voluptatem tempore, tenetur labore sint incidunt vitae. Ipsa ad quam
         aliquid nulla?
       </p>
-      <div class="flex justify-between pt-10">
+      <div
+        class="flex flex-col md:flex-row justify-center items-center md:justify-between pt-10"
+      >
         <Button to="/team">Découvrez notre équipe!</Button>
         <Button to="/games">Découvrez nos jeux!</Button>
         <Button to="/story">Découvrez notre histoire!</Button>
