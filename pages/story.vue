@@ -45,7 +45,7 @@
         alors qu'il se décide à lancer le jeu, en nous écartant de l'aspect
         sangsue du modèle économique courant et commun dans les jeux
         indépendants, tels que des achats en jeu pour des cosmétiques ou encore
-        des publicités.
+        des publicités.<br />
         <span class="italic text-sm">Un achat, une expérience.</span><br />
       </p>
     </Presentation>

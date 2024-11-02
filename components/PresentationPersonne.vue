@@ -45,7 +45,15 @@
               class="transition-all duration-300 ease-in-out hover:scale-125 hover:text-pink-500 hover:-translate-y-1"
               title="Instagram"
             >
-              <Icon name="i-bxl-instagram" />
+              <Icon name="i-bxl-instagram" /> </a
+            ><a
+              v-if="discord"
+              :href="discord"
+              target="_blank"
+              class="transition-all duration-300 ease-in-out hover:scale-125 hover:text-[#505be4] hover:-translate-y-1"
+              title="Instagram"
+            >
+              <Icon name="i-ic-baseline-discord" />
             </a>
           </div>
         </div>
@@ -68,14 +76,16 @@
 </template>
 
 <script setup>
-const { name, description, linkedin, instagram, github, image } = defineProps([
-  "name",
-  "description",
-  "linkedin",
-  "github",
-  "instagram",
-  "image",
-]);
+const { name, description, linkedin, instagram, github, image, discord } =
+  defineProps([
+    "name",
+    "description",
+    "linkedin",
+    "github",
+    "instagram",
+    "image",
+    "discord",
+  ]);
 </script>
 
 <style>

@@ -33,9 +33,66 @@
           ></span>
         </div>
       </button>
+      <!-- navbar pc -->
+      <ul
+        class="md:flex hidden items-center justify-end space-y-0 space-x-8 py-2 mr-5"
+      >
+        <li class="text-[#0A0908] font-semibold">
+          <NuxtLink
+            to="/"
+            :class="{
+              'text-outer-space-900 underline underline-offset-8':
+                $route.path === '/',
+            }"
+            class="relative block transition-all duration-300 ease-in-out hover:text-outer-space-900 hover:underline hover:underline-offset-8"
+            @click="closeMenu"
+          >
+            Accueil
+          </NuxtLink>
+        </li>
+        <li class="font-semibold">
+          <NuxtLink
+            to="/team"
+            :class="{
+              'text-outer-space-900 underline underline-offset-8':
+                $route.path === '/team',
+            }"
+            class="relative block transition-all duration-300 ease-in-out hover:text-outer-space-900 hover:underline hover:underline-offset-8"
+            @click="closeMenu"
+          >
+            Notre équipe
+          </NuxtLink>
+        </li>
+        <li class="font-semibold">
+          <NuxtLink
+            to="/games"
+            :class="{
+              'text-outer-space-900 underline underline-offset-8':
+                $route.path === '/games',
+            }"
+            class="relative block transition-all duration-300 ease-in-out hover:text-outer-space-900 hover:underline hover:underline-offset-8"
+            @click="closeMenu"
+          >
+            Nos jeux
+          </NuxtLink>
+        </li>
+        <li class="font-semibold">
+          <NuxtLink
+            to="/story"
+            :class="{
+              'text-outer-space-900 underline underline-offset-8':
+                $route.path === '/story',
+            }"
+            class="relative block transition-all duration-300 ease-in-out hover:text-outer-space-900 hover:underline hover:underline-offset-8"
+            @click="closeMenu"
+          >
+            Notre histoire
+          </NuxtLink>
+        </li>
+      </ul>
     </div>
 
-    <!-- Menu Navigation avec Animation -->
+    <!-- navbar mobile -->
     <div
       class="lg:block lg:mt-0 overflow-hidden transition-all duration-300 ease-in-out"
       :style="{

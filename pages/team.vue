@@ -5,6 +5,7 @@
       <PresentationPersonne
         name="Wassim Alouini"
         image="/photos/wassim.alouini.jpg"
+        discord="https://discord.com/users/342996069287723010"
       >
         <p>
           Passionné de tout ce qui entoure le jeu vidéo depuis plusieurs années,
@@ -28,6 +29,7 @@
       <PresentationPersonne
         name="Loan Maria-Chatelain"
         image="/photos/loan.maria-chatelain.jpg"
+        discord="https://discord.com/users/642744094531125295"
       >
         <p>
           Après avoir suivi une formation au langage de programmation Python en
@@ -48,6 +50,9 @@
       <PresentationPersonne
         name="Brewen Merer"
         image="/photos/brewen.merer.jpg"
+        github="https://github.com/WagganImp"
+        instagram="https://www.instagram.com/waggan_/"
+        discord="https://discord.com/users/889555373718118421"
       >
         <p>
           Travailleur et très exigeant envers moi-même, je considère un projet
@@ -77,6 +82,7 @@
       <PresentationPersonne
         name="Fabien Guessant"
         image="/photos/fabien.guessant.jpg"
+        discord="https://discord.com/users/779298398691786793"
       >
         <p>
           J'ai découvert la création de jeux vidéo et le codage récréatif sur
@@ -99,6 +105,7 @@
         instagram="https://www.instagram.com/nocteln/"
         linkedin="https://www.linkedin.com/in/eliott-mieze-b15114232/"
         github="https://github.com/Nocteln"
+        discord="https://discord.com/users/562693590514532362"
       >
         <p>
           Mon parcours dans le développement de jeux vidéo a débuté sur la
