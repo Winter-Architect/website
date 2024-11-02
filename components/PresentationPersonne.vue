@@ -3,7 +3,7 @@
     <div
       class="bg-gradient-to-br from-pearl-bush-100 to-pearl-bush-200 p-12 w-[80vw] rounded-2xl flex justify-between gap-12 transition-all duration-500 ease-in-out hover:shadow-xl hover:shadow-pearl-bush-300/30 transform hover:scale-[1.02]"
     >
-      <div class="max-w-[40vw] opacity-0 animate-fadeIn space-y-6">
+      <div class="md:max-w-[40vw] opacity-0 animate-fadeIn space-y-6">
         <h1 class="font-bold text-3xl pb-3 relative">
           {{ name }}
           <span
@@ -51,7 +51,7 @@
         </div>
       </div>
 
-      <div class="relative">
+      <div class="relative hidden md:block">
         <div
           class="absolute inset-0 bg-gradient-to-br from-pearl-bush-300/30 to-transparent rounded-lg transform rotate-6 scale-105"
         ></div>
