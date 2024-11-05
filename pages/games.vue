@@ -20,8 +20,13 @@
           <Button>Download now!</Button>
         </div>
       </div>
+      <h1 class="text-3xl font-semibold py-10 pt-20 underline">Statistiques</h1>
       <Statistiques />
+      <h1 class="text-3xl font-semibold py-10 pt-20 underline">Timeline</h1>
       <Timeline />
+      <h1 class="text-3xl font-semibold py-10 pt-20 underline">
+        Ressources utilisées
+      </h1>
       <Ressources />
       <div class="flex flex-wrap md:gap-10 items-center justify-center pt-10">
         <Button to="https://example.com">Jouez dès maintenant!</Button>

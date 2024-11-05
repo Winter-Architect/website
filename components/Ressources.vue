@@ -1,6 +1,5 @@
 <template>
   <div class="w-[70vw]">
-    <h1 class="text-2xl font-semibold pt-10 pb-3">Ressources utilisées</h1>
     <div class="flex justify-between flex-wrap gap-5 md:gap-10">
       <div v-for="res in ressources" :key="res.name">
         <a :href="res.link" target="_blank" class="flex items-center space-x-2">

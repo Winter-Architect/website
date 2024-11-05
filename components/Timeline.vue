@@ -1,7 +1,5 @@
 <template>
   <div class="w-full max-w-7xl mx-auto px-4">
-    <h1 class="text-2xl font-semibold pt-10 pb-3">Timeline</h1>
-
     <!-- Conteneur avec scroll horizontal sur mobile -->
     <div class="relative overflow-x-auto pb-8">
       <!-- Wrapper qui assure une largeur minimale sur mobile -->

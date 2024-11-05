@@ -3,7 +3,7 @@
     class="fixed w-[100vw] z-50 bg-pearl-bush-100 text-[#0A0908] p-5 mb-10 rounded-b-md transition-all duration-500 ease-in-out hover:shadow-md"
   >
     <!-- En-tête fixe avec Logo et Bouton -->
-    <div class="flex items-center justify-between">
+    <div class="flex items-center justify-between rounded-b-md">
       <NuxtLink
         to="/"
         class="flex items-center space-x-2 transform transition-transform duration-300 ease-in-out hover:scale-110"
