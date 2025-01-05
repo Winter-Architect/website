@@ -33,11 +33,9 @@
 
 <script setup>
 const events = [
-  { month: "Septembre", label: "Début du projet" },
-  { month: "Octobre", label: "Début du projet" },
-  { month: "Octobre", label: "" },
-  { month: "Octobre", label: "" },
-  { month: "Octobre", label: "" },
-  { month: "Octobre", label: "" },
+  { month: "Octobre", label: "Prise de connaissance du projet" },
+  { month: "Novembre", label: "Rédaction du cahier des charges" },
+  { month: "Décembre", label: "Début du projet" },
+  { month: "Janvier", label: "Première soutenance" },
 ];
 </script>

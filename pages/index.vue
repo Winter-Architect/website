@@ -6,7 +6,7 @@
       <!-- <p class="text-[1.5rem] mt-2">A full team of developers!</p> -->
     </div>
 
-    <h2 class="text-2xl pt-10 font-semibold">WHO ARE WE</h2>
+    <h2 class="text-2xl pt-10 font-semibold">QUI SOMMES NOUS?</h2>
     <div
       class="text-outer-space-950 bg-pearl-bush-100 p-5 text-xl font-semibold"
     >
