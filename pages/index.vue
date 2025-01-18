@@ -6,7 +6,7 @@
       </h1>
       <Button variant="outline" class="mt-5">Download our game</Button>
       <div
-        class="h-[10vh] w-[100vw] mt-[20vh] bg-outer-space-800 flex font-bold justify-around items-center"
+        class="h-[10vh] w-[100vw] mt-[20vh] bg-[#1B2A31] flex text-xl font-bold justify-around items-center text-white"
       >
         <p>Students</p>
         <img src="/assets/star.svg" alt="Star" class="h-[4vh]" />
@@ -17,6 +17,7 @@
         <p>jspquoimettre</p>
       </div>
       <QuiSommesNous />
+      <Story />
     </div>
   </div>
 </template>

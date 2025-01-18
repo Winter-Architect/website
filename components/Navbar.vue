@@ -19,10 +19,12 @@
       <div
         class="flex items-center space-x-5 text-pearl-bush-100 md:text-lg lg:text-xl"
       >
-        <p href="#" class="cursor-pointer hover:font-bold">Acceuil</p>
-        <p href="#" class="cursor-pointer hover:font-bold">Notre équipe</p>
-        <p href="#" class="cursor-pointer hover:font-bold">Nos jeux</p>
-        <p href="#" class="cursor-pointer hover:font-bold">Notre histoire</p>
+        <a href="#" class="cursor-pointer hover:font-bold"> Acceuil </a>
+        <a href="#story" class="cursor-pointer hover:font-bold"
+          >Notre histoire</a
+        >
+        <a href="#" class="cursor-pointer hover:font-bold">Nos jeux</a>
+        <a href="#" class="cursor-pointer hover:font-bold">Notre histoire</a>
       </div>
       <Button>Get Started</Button>
     </div>
