@@ -1,7 +1,7 @@
 <template>
-  <div class="text-pearl-bush-100 mt-[15vh]">
+  <div class="text-pearl-bush-100">
     <div class="flex flex-col items-center mb-10 mt-[6vh]">
-      <h1 class="text-[4rem] md:text-[4rem] mt-[15vh] font-bold text-center">
+      <h1 class="text-[4rem] md:text-[4rem] mt-[10vh] font-bold text-center">
         Winter Architect
       </h1>
       <Button variant="outline" class="mt-5">Download our game</Button>
@@ -16,6 +16,7 @@
         <img src="/assets/star.svg" alt="Star" class="h-[4vh]" />
         <p>jspquoimettre</p>
       </div>
+      <QuiSommesNous />
     </div>
   </div>
 </template>

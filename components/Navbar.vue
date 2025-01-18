@@ -1,5 +1,5 @@
 <template>
-  <nav class="fixed w-[100vw] bg-transparent z-50 text-[#0A0908] p-5 mb-10">
+  <nav class="w-[100vw] bg-transparent z-50 text-[#0A0908] p-5 mb-10">
     <!-- En-tête fixe avec Logo et Bouton -->
     <div class="flex items-center justify-around rounded-b-md">
       <NuxtLink
