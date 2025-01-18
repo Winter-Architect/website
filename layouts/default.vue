@@ -49,7 +49,7 @@ onMounted(() => {
     "https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js";
   script.async = true;
   document.head.appendChild(script);
-  setInterval(spawnNeige, 3000);
+  // setInterval(spawnNeige, 3000);
 });
 
 onUnmounted(cleanup);

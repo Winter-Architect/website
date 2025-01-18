@@ -24,7 +24,7 @@
         <p href="#" class="cursor-pointer hover:font-bold">Nos jeux</p>
         <p href="#" class="cursor-pointer hover:font-bold">Notre histoire</p>
       </div>
-      <Button to="bite">Get Started</Button>
+      <Button>Get Started</Button>
     </div>
   </nav>
 </template>
