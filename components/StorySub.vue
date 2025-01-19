@@ -11,10 +11,11 @@
       <h1 class="text-pearl-bush-300 font-bold text-2xl my-[2vh]">
         {{ props.title }}
       </h1>
+
+      <!-- ref="contentRef" -->
       <p
-        ref="contentRef"
         :style="{ maxHeight: showMore ? 'none' : '30vh', overflow: 'hidden' }"
-        v-html="content"
+        v-html="props.content"
       ></p>
       <button class="text-pearl-bush-300" @click="ShowMore">
         En voir {{ showMore ? "moins" : "plus" }} >>
@@ -25,7 +26,6 @@
 
 <script setup>
 const props = defineProps(["title", "content", "icon"]);
-let content = ref(props.content);
 let showMore = ref(false);
 const contentRef = ref(null);
 
