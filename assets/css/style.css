@@ -1,0 +1,11 @@
+/* @import url("@/css/clash-display.css;"); */
+
+/* Cacher la barre de défilement pour tous les navigateurs */
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari et Edge */
+}

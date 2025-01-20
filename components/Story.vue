@@ -17,7 +17,7 @@
 const StoryParts = [
   {
     title: "Notre Origine",
-    icon: "/assets/originIcon.svg",
+    icon: "/originIcon.svg",
     content: `
       <p>En tant que groupe de jeunes étudiants, nous avons décidé de nous ouvrir 
       au monde de l'entreprise en fondant notre propre start-up, afin de 
@@ -40,7 +40,7 @@ const StoryParts = [
   },
   {
     title: "Nos Valeurs",
-    icon: "/assets/originIcon.svg",
+    icon: "/originIcon.svg",
     content: `
       <p><strong>Nos valeurs sont centrées sur l'expérience du joueur</strong>. Nous accordons une importance 
       considérable à ce qui se répercute sur le sentiment du joueur. En effet, 
@@ -63,7 +63,7 @@ const StoryParts = [
   },
   {
     title: "Notre Jeu",
-    icon: "/assets/originIcon.svg",
+    icon: "/originIcon.svg",
     content: `
       <p><strong>Blackout</strong> est un <em>3D platformer / puzzle solver</em> qui pousse les joueurs 
       à la réflexion dans une ambiance d'horreur. Un élément central de l'expérience <strong>Blackout</strong> est 

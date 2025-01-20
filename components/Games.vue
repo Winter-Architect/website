@@ -36,6 +36,99 @@
         <h1 class="font-bold text-3xl my-10">TIMELINE</h1>
         <Timeline />
       </div>
+      <div>
+        <h1 class="font-bold text-3xl">RESSOURCES UTILISEES</h1>
+        <div
+          class="relative flex items-center justify-center mt-10 max-w-[80vw] mx-auto"
+        >
+          <!-- Flèche gauche -->
+
+          <!-- Conteneur du slider -->
+          <div
+            ref="slider"
+            class="flex gap-5 overflow-x-scroll hide-scrollbar scroll-smooth snap-x snap-mandatory"
+          >
+            <Ressource
+              v-for="res in ressources"
+              :key="res.name"
+              :icon="res.icon"
+              :name="res.name"
+              :link="res.link"
+              class="snap-center"
+            />
+          </div>
+
+          <!-- Flèche droite -->
+        </div>
+        <div class="flex justify-center mt-10 gap-10">
+          <button
+            class="text-center z-10 bg-pearl-bush-350 w-10 h-10 text-black p-2 rounded-full hover:bg-pearl-bush-400 transition"
+            @click="scrollLeft"
+          >
+            <Icon name="i-mdi-arrow-left" />
+          </button>
+          <button
+            class="z-10 bg-pearl-bush-350 w-10 h-10 text-black p-2 rounded-full hover:bg-pearl-bush-400 transition"
+            @click="scrollRight"
+          >
+            <Icon name="i-mdi-arrow-right" />
+          </button>
+        </div>
+      </div>
     </div>
   </section>
 </template>
+
+<script setup>
+const slider = ref(null);
+const isRight = ref(false);
+const isLeft = ref(true);
+
+const scrollLeft = () => {
+  if (slider.value) {
+    slider.value.scrollBy({ left: -200, behavior: "smooth" });
+  }
+};
+
+const scrollRight = () => {
+  if (slider.value) {
+    slider.value.scrollBy({ left: 200, behavior: "smooth" });
+  }
+};
+
+const ressources = [
+  { name: "Vue.js", link: "https://vuejs.org/", icon: "i-logos-vue" },
+  { name: "Vite", link: "https://vitejs.dev/", icon: "i-logos-vitejs" },
+  {
+    name: "Tailwind CSS",
+    link: "https://tailwindcss.com/",
+    icon: "i-logos-tailwindcss-icon",
+  },
+  { name: "Unity", link: "https://unity.com/fr", icon: "i-mdi-unity" },
+  {
+    name: "Rider",
+    link: "https://www.jetbrains.com/fr-fr/rider/",
+    icon: "i-devicon-rider",
+  },
+  {
+    name: "github",
+    link: "https://github.com/",
+    icon: "i-logos-github-icon",
+  },
+  {
+    name: "Discord",
+    link: "https://discord.com/",
+    icon: "i-logos-discord-icon",
+  },
+  {
+    name: "VS Code",
+    link: "https://code.visualstudio.com/",
+    icon: "i-logos-visual-studio-code",
+  },
+  {
+    name: "Vercel",
+    link: "https://vercel.com/",
+    icon: "i-logos-vercel-icon",
+  },
+];
+</script>
