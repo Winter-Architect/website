@@ -2,18 +2,16 @@
   <section id="story">
     <h1 class="text-4xl font-bold text-center my-10">NOTRE HISTOIRE</h1>
     <div class="flex flex-col md:flex-row justify-around items-center gap-10">
-      <StorySub
-        v-for="el in StoryParts"
-        :key="el.title"
-        :content="el.content"
-        :title="el.title"
-        :icon="el.icon"
-      />
+      <StorySub v-for="el in StoryParts" :key="el.title" :el="el" />
     </div>
   </section>
 </template>
 
 <script setup>
+/*
+        :content="el.content"
+        :title="el.title"
+        :icon="el.icon"*/
 const StoryParts = [
   {
     title: "Notre Origine",

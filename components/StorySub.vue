@@ -6,30 +6,29 @@
       <div
         class="bg-outer-space-950 p-2 rounded-full w-[10vh] h-[10vh] flex items-center justify-center"
       >
-        <img :src="props.icon" alt="icon" />
+        <img :src="el.icon" alt="icon" />
       </div>
       <h1 class="text-pearl-bush-300 font-bold text-2xl my-[2vh]">
-        {{ props.title }}
+        {{ el.title }}
       </h1>
 
-      <!-- ref="contentRef" -->
-      <p
-        :style="{ maxHeight: showMore ? 'none' : '30vh', overflow: 'hidden' }"
-        v-html="props.content"
-      ></p>
-      <button class="text-pearl-bush-300" @click="ShowMore">
-        En voir {{ showMore ? "moins" : "plus" }} >>
-      </button>
+      <div v-html="el.content"></div>
     </div>
   </div>
 </template>
 
-<script setup>
-const props = defineProps(["title", "content", "icon"]);
-let showMore = ref(false);
-const contentRef = ref(null);
+<!-- <script>
+export default {
+  name: "StorySub",
+  props: {
+    el: {
+      type: Object,
+      required: true,
+    },
+  },
+};
+</script> -->
 
-function ShowMore() {
-  showMore.value = !showMore.value;
-}
+<script setup>
+const { el } = defineProps(["el"]);
 </script>
