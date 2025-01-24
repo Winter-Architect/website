@@ -75,6 +75,17 @@
           </button>
         </div>
       </div>
+      <div class="my-10 mt-20">
+        <h1 class="font-bold text-3xl my-10">DOCUMENTS</h1>
+        <div class="grid grid-cols-4 gap-5">
+          <Button>Cahier des charges</Button>
+          <Button>Cahier des charges</Button>
+          <Button>Cahier des charges</Button>
+          <Button>Cahier des charges</Button>
+          <Button>Cahier des charges</Button>
+          <Button>Cahier des charges</Button>
+        </div>
+      </div>
     </div>
   </section>
 </template>

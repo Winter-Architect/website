@@ -1,6 +1,8 @@
 <template>
   <div class="flex items-center">
-    <h1 class="text-[7.5vh] pr-5 text-pearl-bush-350">{{ displayedNb }}</h1>
+    <h1 class="text-[7.5vh] pr-5 font-bold text-pearl-bush-350">
+      {{ displayedNb }}
+    </h1>
     <p class="text-xl">{{ text }}</p>
   </div>
 </template>
