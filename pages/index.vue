@@ -1,37 +1,41 @@
 <template>
-  <div class="text-pearl-bush-100 w-[80vw] mt-[15vh]">
-    <div class="flex flex-col items-center mb-10 mt-[6vh]">
-      <img src="/logo_light_bold.png" alt="logo" class="w-[10rem] my-2" />
-      <h1 class="text-3xl md:text-[3rem] pt-5 font-bold">Winter Architect</h1>
-      <!-- <p class="text-[1.5rem] mt-2">A full team of developers!</p> -->
-    </div>
-
-    <h2 class="text-2xl pt-10 font-semibold">QUI SOMMES NOUS?</h2>
-    <div
-      class="text-outer-space-950 bg-pearl-bush-100 p-5 text-xl font-semibold"
-    >
-      <p>
-        Nous sommes une équipe de 5 étudiants en première année à EPITA,
-        passionnés par l'informatique et le développement de jeux vidéo. Notre
-        objectif est de créer des expériences interactives captivantes, en
-        mêlant créativité et compétences techniques.
-      </p>
-      <br />
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit odio
-        provident culpa aspernatur porro a saepe voluptate! At excepturi
-        quisquam labore ad natus dignissimos vitae esse est nesciunt, vero ab
-        dolorum tenetur explicabo illo dolore repudiandae asperiores aut.
-        Voluptatem tempore, tenetur labore sint incidunt vitae. Ipsa ad quam
-        aliquid nulla?
-      </p>
-      <div
-        class="flex flex-col md:flex-row justify-center items-center md:justify-between pt-10"
+  <div class="text-white max-w-full overflow-x-hidden font-clash">
+    <div class="flex flex-col items-center mt-[6vh]">
+      <h1
+        class="text-[4rem] md:text-[4rem] mt-[10vh] font-bold text-center font-orbitron"
       >
-        <Button to="/team">Découvrez notre équipe!</Button>
-        <Button to="/games">Découvrez nos jeux!</Button>
-        <Button to="/story">Découvrez notre histoire!</Button>
+        Winter Architect
+      </h1>
+      <Button variant="outline" class="mt-5">Download our game</Button>
+      <div
+        class="h-[10vh] w-[100vw] overflow-hidden mt-[20vh] bg-[#1B2A31] flex text-xl font-bold justify-around items-center text-white"
+      >
+        <p>Students</p>
+        <img src="/star.svg" alt="Star" class="h-[4vh]" />
+        <p>GameDevelopers</p>
+        <img src="/star.svg" alt="Star" class="h-[4vh]" />
+        <p>TeamWork</p>
+        <img src="/star.svg" alt="Star" class="h-[4vh]" />
+        <p>jspquoimettre</p>
       </div>
+      <QuiSommesNous />
+      <Games />
+      <Team />
+      <Story />
+      <NuxtLink
+        to="/"
+        class="flex items-center transform transition-transform duration-300 ease-in-out hover:scale-110 mt-[10vh]"
+      >
+        <img src="/logo_light_bold.png" alt="logo" width="45" height="45" />
+        <div class="flex flex-col">
+          <h1 class="font-bold md:text-xl lg:text-2xl text-pearl-bush-100">
+            Winter
+          </h1>
+          <h1 class="font-bold md:text-xl lg:text-2xl text-pearl-bush-300">
+            Architect
+          </h1>
+        </div>
+      </NuxtLink>
     </div>
   </div>
 </template>

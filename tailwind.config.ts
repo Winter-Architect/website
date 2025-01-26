@@ -1,7 +1,12 @@
 module.exports = {
   darkMode: "class",
+  plugins: [require("tailwind-scrollbar-hide")],
   theme: {
     extend: {
+      fontFamily: {
+        clash: ["Clash-Display"],
+        orbitron: ["Orbitron"],
+      },
       backgroundColor: {
         default: "#22333b",
       },
@@ -11,6 +16,7 @@ module.exports = {
           "100": "#eae0d5", // couleur de base
           "200": "#e2d4c6",
           "300": "#cfb7a2",
+          "350": "#C6AC8F",
           "400": "#bb957c",
           "500": "#ad7d62",
           "600": "#a06b56",
