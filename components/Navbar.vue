@@ -1,5 +1,7 @@
 <template>
-  <nav class="w-full bg-transparent z-50 text-[#0A0908] p-5 mb-10">
+  <nav
+    class="w-full bg-transparent z-50 text-[#0A0908] p-5 mb-10 font-clash-display"
+  >
     <!-- En-tête fixe avec Logo et Bouton -->
     <div class="flex items-center justify-around rounded-b-md">
       <NuxtLink
@@ -23,8 +25,10 @@
         <a href="#story" class="cursor-pointer hover:font-bold"
           >Notre histoire</a
         >
-        <a href="#" class="cursor-pointer hover:font-bold">Nos jeux</a>
-        <a href="#" class="cursor-pointer hover:font-bold">Notre histoire</a>
+        <a href="#games" class="cursor-pointer hover:font-bold">Nos jeux</a>
+        <a href="#story" class="cursor-pointer hover:font-bold"
+          >Notre histoire</a
+        >
       </div>
       <Button>Get Started</Button>
     </div>

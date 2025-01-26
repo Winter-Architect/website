@@ -3,6 +3,10 @@ module.exports = {
   plugins: [require("tailwind-scrollbar-hide")],
   theme: {
     extend: {
+      fontFamily: {
+        clash: ["Clash-Display"],
+        orbitron: ["Orbitron"],
+      },
       backgroundColor: {
         default: "#22333b",
       },

@@ -41,22 +41,22 @@ const team = ref([
     image: "/photos/wassim.alouini.jpg",
   },
   {
-    name: "Membre 2",
+    name: "Brewen Merer",
     description: "Responsable des intéligences artificielles.",
     image: "/photos/brewen.merer.jpg",
   },
   {
-    name: "Membre 3",
+    name: "Loan Maria-Chatelain",
     description: "Responsable level design.",
     image: "/photos/loan.maria-chatelain.jpg",
   },
   {
-    name: "Membre 4",
+    name: "Fabien Guessant",
     description: "Responsable des graphismes et de la modélisation.",
     image: "/photos/fabien.guessant.jpg",
   },
   {
-    name: "Membre 5",
+    name: "Eliott Mieze",
     description: "Responsable des interfaces graphiques et du site web.",
     image: "/photos/eliott.mieze.jpg",
   },

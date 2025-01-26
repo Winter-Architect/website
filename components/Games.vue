@@ -1,7 +1,9 @@
 <template>
   <section id="games" class="bg-[#1B2A31] w-full mt-[10vh] text-white">
     <div class="w-[80vw] mx-auto">
-      <h1 class="text-4xl font-bold text-center my-10">Nos jeux</h1>
+      <h1 class="text-4xl font-bold text-center my-10 font-orbitron">
+        Nos jeux
+      </h1>
 
       <div
         class="px-6 py-16 flex flex-col lg:flex-row items-center justify-evenly"
@@ -12,7 +14,7 @@
           class="rounded-lg shadow-lg w-[20vw] h-[15vw] object-cover object-center"
         />
         <div class="lg:w-1/2 lg:pl-12 mt-10 lg:mt-0">
-          <h1 class="text-[36px]">Blackout</h1>
+          <h1 class="text-[36px] font-bold">Blackout</h1>
           <p class="text-[16px] my-5">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis
             accusantium vitae maxime molestiae recusandae culpa voluptas! Id
@@ -24,7 +26,7 @@
       </div>
 
       <div class="my-10">
-        <h1 class="font-bold text-3xl">STATISTIQUES</h1>
+        <h1 class="font-bold text-3xl font-orbitron">STATISTIQUES</h1>
         <div class="flex justify-evenly my-10">
           <Stat nb="10" text="téléchargements" />
           <Stat nb="82" text="documents obtenus" />
@@ -33,11 +35,11 @@
         <div class="h-[0.8px] w-[80vw] bg-pearl-bush-350" />
       </div>
       <div class="my-10 mt-20">
-        <h1 class="font-bold text-3xl my-10">TIMELINE</h1>
+        <h1 class="font-bold text-3xl my-10 font-orbitron">TIMELINE</h1>
         <Timeline />
       </div>
       <div>
-        <h1 class="font-bold text-3xl">RESSOURCES UTILISEES</h1>
+        <h1 class="font-bold text-3xl font-orbitron">RESSOURCES UTILISEES</h1>
         <div
           class="relative flex items-center justify-center mt-10 max-w-[80vw] mx-auto"
         >
@@ -76,14 +78,17 @@
         </div>
       </div>
       <div class="my-10 mt-20">
-        <h1 class="font-bold text-3xl my-10">DOCUMENTS</h1>
-        <div class="grid grid-cols-4 gap-5">
-          <Button>Cahier des charges</Button>
-          <Button>Cahier des charges</Button>
-          <Button>Cahier des charges</Button>
-          <Button>Cahier des charges</Button>
-          <Button>Cahier des charges</Button>
-          <Button>Cahier des charges</Button>
+        <h1 class="font-bold text-3xl my-10 font-orbitron">DOCUMENTS</h1>
+        <div class="grid grid-cols-4 gap-5 place-items-center">
+          <Button pdfUrl="/docs/cahier_des_charges.pdf"
+            >Cahier des charges</Button
+          >
+          <Button pdfUrl="/docs/Rapport_de_soutenance_1.pdf"
+            >Rapport de soutenance n°1</Button
+          >
+          <Button pdfUrl="/docs/Plan_de_soutenance_1.pdf">
+            Plan de soutenance n°1</Button
+          >
         </div>
       </div>
     </div>

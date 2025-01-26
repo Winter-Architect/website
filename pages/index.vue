@@ -1,7 +1,9 @@
 <template>
-  <div class="text-pearl-bush-100 max-w-full overflow-x-hidden">
+  <div class="text-white max-w-full overflow-x-hidden font-clash">
     <div class="flex flex-col items-center mt-[6vh]">
-      <h1 class="text-[4rem] md:text-[4rem] mt-[10vh] font-bold text-center">
+      <h1
+        class="text-[4rem] md:text-[4rem] mt-[10vh] font-bold text-center font-orbitron"
+      >
         Winter Architect
       </h1>
       <Button variant="outline" class="mt-5">Download our game</Button>
@@ -17,9 +19,9 @@
         <p>jspquoimettre</p>
       </div>
       <QuiSommesNous />
-      <Story />
       <Games />
       <Team />
+      <Story />
       <NuxtLink
         to="/"
         class="flex items-center transform transition-transform duration-300 ease-in-out hover:scale-110 mt-[10vh]"

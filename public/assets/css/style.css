@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./clash-display.css";
+
+@layer base {
+  @font-face {
+    font-family: Clash-Display;
+    src: url(../fonts/ClashDisplay-Variable.ttf) format(".ttf");
+  }
+  @font-face {
+    font-family: Orbitron;
+    src: url(../fonts/Orbitron-VariableFont_wght.ttf) format(".ttf");
+  }
+}
+
+/* Cacher la barre de défilement pour tous les navigateurs */
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari et Edge */
+}

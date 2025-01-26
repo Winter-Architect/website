@@ -1,6 +1,8 @@
 <template>
   <section id="story">
-    <h1 class="text-4xl font-bold text-center my-10">NOTRE HISTOIRE</h1>
+    <h1 class="text-4xl font-bold text-center my-10 font-orbitron">
+      NOTRE HISTOIRE
+    </h1>
     <div class="flex flex-col md:flex-row justify-around items-center gap-10">
       <StorySub v-for="el in StoryParts" :key="el.title" :el="el" />
     </div>
