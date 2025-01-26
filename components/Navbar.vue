@@ -22,8 +22,8 @@
         class="flex items-center space-x-5 text-pearl-bush-100 md:text-lg lg:text-xl"
       >
         <a href="#" class="cursor-pointer hover:font-bold"> Acceuil </a>
-        <a href="#story" class="cursor-pointer hover:font-bold"
-          >Notre histoire</a
+        <a href="#quisommesnous" class="cursor-pointer hover:font-bold"
+          >qui sommes nous</a
         >
         <a href="#games" class="cursor-pointer hover:font-bold">Nos jeux</a>
         <a href="#story" class="cursor-pointer hover:font-bold"
