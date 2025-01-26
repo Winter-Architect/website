@@ -42,7 +42,7 @@ const team = ref([
   },
   {
     name: "Brewen Merer",
-    description: "Responsable des intéligences artificielles.",
+    description: "Responsable des intelligences artificielles.",
     image: "/photos/brewen.merer.jpg",
   },
   {
