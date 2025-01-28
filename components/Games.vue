@@ -44,7 +44,9 @@
 
       <div class="my-10">
         <h1 class="font-bold text-3xl font-orbitron">STATISTIQUES</h1>
-        <div class="flex-col md:flex-row align-center justify-evenly my-10">
+        <div
+          class="md:flex flex-col md:flex-row align-center justify-evenly my-10"
+        >
           <Stat nb="10" text="téléchargements" />
           <Stat nb="82" text="documents obtenus" />
           <Stat nb="3" text="joueurs connecté" />
