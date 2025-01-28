@@ -15,7 +15,7 @@
   </a>
   <button
     v-else-if="variant === 'outline'"
-    class="text-pearl-bush-350 bg-outer-space-950 hover:bg-outer-space-950 border-2 border-pearl-bush-300 transition-all duration-200 p-3 w-full md:w-[15vw] text-lg rounded-md transform hover:scale-105 hover:shadow-glow active:scale-95"
+    class="text-pearl-bush-350 bg-outer-space-950 hover:bg-outer-space-950 border-2 border-pearl-bush-300 transition-all duration-200 p-3 w-[70vw] md:w-[15vw] text-lg rounded-md transform hover:scale-105 hover:shadow-glow active:scale-95"
   >
     <slot />
   </button>

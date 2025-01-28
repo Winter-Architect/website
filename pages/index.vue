@@ -10,13 +10,13 @@
       <div
         class="h-[10vh] w-[100vw] overflow-hidden mt-[20vh] bg-[#1B2A31] flex text-xl font-bold justify-around items-center text-white"
       >
-        <p>Students</p>
+        <p class="hidden md:block">Students</p>
         <img src="/icons/star.svg" alt="Star" class="h-[4vh]" />
-        <p>GameDevelopers</p>
+        <p class="hidden md:block">GameDevelopers</p>
         <img src="/icons/star.svg" alt="Star" class="h-[4vh]" />
-        <p>TeamWork</p>
+        <p class="hidden md:block">TeamWork</p>
         <img src="/icons/star.svg" alt="Star" class="h-[4vh]" />
-        <p>jspquoimettre</p>
+        <p class="hidden md:block">jspquoimettre</p>
       </div>
       <QuiSommesNous />
       <Games />

@@ -6,28 +6,45 @@
       </h1>
 
       <div
-        class="px-6 py-16 flex flex-col lg:flex-row items-center justify-evenly"
+        class="x-6 py-16 flex flex-col lg:flex-row items-center justify-evenly"
       >
         <img
           src="https://placehold.co/535x340"
           alt=""
           class="rounded-lg shadow-lg w-[20vw] h-[15vw] object-cover object-center"
         />
-        <div class="lg:w-1/2 lg:pl-12 mt-10 lg:mt-0">
+        <div class="lg:w-1/2 lg:pl-12 my-10 lg:mt-0">
           <h1 class="text-[36px] font-bold">Blackout</h1>
-          <p class="text-[16px] my-5">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis
-            accusantium vitae maxime molestiae recusandae culpa voluptas! Id
-            dolorum a possimus. Ad doloremque possimus ex fugit eius neque
-            nulla? Accusamus delectus accusantium quis eveniet repudiandae fuga!
-          </p>
+          <div class="my-5">
+            <p class="text-[16px] my-5">
+              <strong>Blackout</strong> est un jeu de plateforme 3D et de
+              réflexion avec une ambiance d'horreur. Il met en avant une
+              coopération duo :
+            </p>
+
+            <ul>
+              <li>
+                <strong>Agent</strong> : Exploration, survie et résolution
+                d'épreuves avec des contrôles classiques.
+              </li>
+              <li>
+                <strong>Support</strong> : Interaction avec des objets
+                électroniques pour résoudre les énigmes.
+              </li>
+            </ul>
+
+            <p>
+              Les joueurs collaborent dans des niveaux générés aléatoirement
+              pour avancer ensemble.
+            </p>
+          </div>
           <Button>Téléchargez le jeu!</Button>
         </div>
       </div>
 
       <div class="my-10">
         <h1 class="font-bold text-3xl font-orbitron">STATISTIQUES</h1>
-        <div class="flex justify-evenly my-10">
+        <div class="flex-col md:flex-row align-center justify-evenly my-10">
           <Stat nb="10" text="téléchargements" />
           <Stat nb="82" text="documents obtenus" />
           <Stat nb="3" text="joueurs connecté" />
@@ -79,7 +96,9 @@
       </div>
       <div class="my-10 mt-20">
         <h1 class="font-bold text-3xl my-10 font-orbitron">DOCUMENTS</h1>
-        <div class="grid grid-cols-4 gap-5 place-items-center">
+        <div
+          class="md:grid grid-cols-4 gap-5 flex flex-col md:place-items-center"
+        >
           <Button pdfUrl="/docs/cahier_des_charges.pdf"
             >Cahier des charges</Button
           >

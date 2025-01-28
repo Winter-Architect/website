@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-[25vw] bg-gradient-to-r from-pearl-bush-300 to-outer-space-950 p-[1.5px] rounded-3xl"
+    class="w-[90vw] md:w-[25vw] bg-gradient-to-r from-pearl-bush-300 to-outer-space-950 p-[1.5px] rounded-3xl"
   >
     <div class="bg-[#1B2A31] p-5 rounded-[calc(1.5rem-1px)]">
       <div
@@ -16,18 +16,6 @@
     </div>
   </div>
 </template>
-
-<!-- <script>
-export default {
-  name: "StorySub",
-  props: {
-    el: {
-      type: Object,
-      required: true,
-    },
-  },
-};
-</script> -->
 
 <script setup>
 const { el } = defineProps(["el"]);

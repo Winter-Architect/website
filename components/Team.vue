@@ -1,6 +1,8 @@
 <template>
   <div class="px-6">
-    <h1 class="font-bold text-3xl my-10 text-center">NOTRE ÉQUIPE</h1>
+    <h1 class="font-bold text-2xl md:text-4xl my-10 text-center">
+      NOTRE ÉQUIPE
+    </h1>
     <div
       class="accordion flex w-full max-w-6xl mx-auto h-80 rounded-lg overflow-hidden"
     >

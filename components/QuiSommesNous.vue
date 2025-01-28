@@ -12,7 +12,7 @@
     <!-- Colonne droite (texte) -->
     <div class="lg:w-1/2 lg:pl-12 mt-10 lg:mt-0">
       <h2
-        class="text-4xl font-bold uppercase tracking-wider mb-6 font-orbitron"
+        class="text-2xl md:text-4xl font-bold uppercase tracking-wider mb-6 font-orbitron"
       >
         Qui sommes-nous?
       </h2>

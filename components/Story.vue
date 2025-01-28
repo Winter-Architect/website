@@ -1,6 +1,6 @@
 <template>
   <section id="story">
-    <h1 class="text-4xl font-bold text-center my-10 font-orbitron">
+    <h1 class="text-2xl md:text-4xl font-bold text-center my-10 font-orbitron">
       NOTRE HISTOIRE
     </h1>
     <div class="flex flex-col md:flex-row justify-around items-center gap-10">

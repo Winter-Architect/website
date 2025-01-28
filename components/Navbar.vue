@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="w-full bg-transparent z-50 text-[#0A0908] p-5 mb-10 font-clash-display"
+    class="w-full bg-transparent z-50 text-[#0A0908] p-5 mb-10 font-clash-display hidden md:block"
   >
     <!-- En-tête fixe avec Logo et Bouton -->
     <div class="flex items-center justify-around rounded-b-md">

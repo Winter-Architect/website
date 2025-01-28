@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="w-[10vw] bg-gradient-to-b from-pearl-bush-300 to-outer-space-950 p-[1.5px] rounded-md"
+      class="md:w-[10vw] bg-gradient-to-b from-pearl-bush-300 to-outer-space-950 p-[1.5px] rounded-md"
     >
       <div
         class="bg-[#1B2A31] p-5 rounded-[calc(0.375rem-1px)] flex flex-col items-center"
