@@ -31,8 +31,6 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
-
 // Liste de membres de l'équipe
 const team = ref([
   {
@@ -68,6 +66,6 @@ const hoverIndex = ref(null);
 
 <style scoped>
 .accordion-item:hover img {
-  transform: scale(1.1);
+  transform: scale(1.01);
 }
 </style>
