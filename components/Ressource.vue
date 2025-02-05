@@ -11,6 +11,7 @@
         >
           <Icon
             :name="icon"
+            dynamic
             class="w-[5vh] h-[5vh] flex items-center justify-center"
           />
         </div>
