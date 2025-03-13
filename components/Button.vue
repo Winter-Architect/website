@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink v-if="to" :to="to" class="inline-block">
+  <NuxtLink v-if="to && variant != 'outline'" :to="to" class="inline-block">
     <button
       class="bg-pearl-bush-350 text-outer-space-950 hover:bg-pearl-bush-400 transition-all duration-200 p-3 mt-7 w-full md:w-[15vw] text-lg rounded-md transform hover:scale-105 hover:shadow-glow active:scale-95"
     >

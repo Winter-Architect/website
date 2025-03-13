@@ -38,7 +38,11 @@
               pour avancer ensemble.
             </p>
           </div>
-          <Button>Téléchargez le jeu!</Button>
+          <Button
+            to="https://github.com/Winter-Architect/blackout/releases"
+            @click="DownloadClicked"
+            >Téléchargez le jeu!</Button
+          >
         </div>
       </div>
 
@@ -47,7 +51,7 @@
         <div
           class="md:flex flex-col md:flex-row align-center justify-evenly my-10"
         >
-          <Stat nb="10" text="téléchargements" />
+          <Stat :nb="downloads.length" text="téléchargements" />
           <Stat :nb="users.length" text="joeurs uniques" />
           <Stat :nb="connectedUsers.length" text="joueurs connecté" />
         </div>
@@ -127,6 +131,16 @@ const connectedUsers = await fetch(
 const users = await fetch("https://api.nocteln.fr/blackout/users").then((res) =>
   res.json()
 );
+
+const downloads = await fetch("https://api.nocteln.fr/blackout/download").then(
+  (res) => res.json()
+);
+
+async function DownloadClicked() {
+  await fetch("https://api.nocteln.fr/blackout/download", {
+    method: "POST",
+  });
+}
 
 const scrollLeft = () => {
   if (slider.value) {

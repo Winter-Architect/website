@@ -6,7 +6,13 @@
       >
         Winter Architect
       </h1>
-      <Button variant="outline" class="mt-5">Download our game</Button>
+      <Button
+        variant="outline"
+        class="mt-5"
+        @click="DownloadClicked"
+        to="https://github.com/Winter-Architect/blackout/releases"
+        >Download our game</Button
+      >
       <div
         class="h-[10vh] w-[100vw] overflow-hidden mt-[20vh] bg-[#1B2A31] flex text-xl font-bold justify-around items-center text-white"
       >
@@ -39,3 +45,18 @@
     </div>
   </div>
 </template>
+
+<script setup>
+const clicked = ref(false);
+
+async function DownloadClicked() {
+  if (clicked.value) return;
+  clicked.value = true;
+  await fetch("https://api.nocteln.fr/blackout/download", {
+    method: "POST",
+  });
+  await navigateTo("https://github.com/Winter-Architect/blackout/releases", {
+    external: true,
+  });
+}
+</script>
