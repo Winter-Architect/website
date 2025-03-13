@@ -51,9 +51,9 @@
         <div
           class="md:flex flex-col md:flex-row align-center justify-evenly my-10"
         >
-          <Stat :nb="downloads.length" text="téléchargements" />
-          <Stat :nb="users.length" text="joueurs uniques" />
-          <Stat :nb="connectedUsers.length" text="joueurs connecté" />
+          <Stat :nb="downloads.length" text="Téléchargements" />
+          <Stat :nb="users.length" text="Joueurs uniques" />
+          <Stat :nb="connectedUsers.length" text="Joueurs connecté(s)" />
         </div>
         <div class="h-[0.8px] w-[80vw] bg-pearl-bush-350" />
       </div>
