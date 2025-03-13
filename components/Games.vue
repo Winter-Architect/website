@@ -49,7 +49,7 @@
         >
           <Stat nb="10" text="téléchargements" />
           <Stat nb="82" text="documents obtenus" />
-          <Stat nb="3" text="joueurs connecté" />
+          <Stat :nb="users.length" text="joueurs connecté" />
         </div>
         <div class="h-[0.8px] w-[80vw] bg-pearl-bush-350" />
       </div>
@@ -120,6 +120,10 @@
 const slider = ref(null);
 const isRight = ref(false);
 const isLeft = ref(true);
+
+const users = await fetch("https://api.nocteln.fr/blackout/users").then((res) =>
+  res.json()
+);
 
 const scrollLeft = () => {
   if (slider.value) {
