@@ -48,8 +48,8 @@
           class="md:flex flex-col md:flex-row align-center justify-evenly my-10"
         >
           <Stat nb="10" text="téléchargements" />
-          <Stat nb="82" text="documents obtenus" />
-          <Stat :nb="users.length" text="joueurs connecté" />
+          <Stat :nb="users.length" text="joeurs uniques" />
+          <Stat :nb="connectedUsers.length" text="joueurs connecté" />
         </div>
         <div class="h-[0.8px] w-[80vw] bg-pearl-bush-350" />
       </div>
@@ -121,6 +121,9 @@ const slider = ref(null);
 const isRight = ref(false);
 const isLeft = ref(true);
 
+const connectedUsers = await fetch(
+  "https://api.nocteln.fr/blackout/connectedUsers"
+).then((res) => res.json());
 const users = await fetch("https://api.nocteln.fr/blackout/users").then((res) =>
   res.json()
 );
