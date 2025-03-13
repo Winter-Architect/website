@@ -114,6 +114,12 @@
           <Button pdfUrl="/docs/Plan_de_soutenance_1.pdf">
             Plan de soutenance n°1</Button
           >
+          <Button pdfUrl="/docs/Rapport_de_soutenance_2.pdf"
+            >Rapport de soutenance n°2</Button
+          >
+          <Button pdfUrl="/docs/Plan_de_soutenance_2.pdf">
+            Plan de soutenance n°2</Button
+          >
         </div>
       </div>
     </div>
