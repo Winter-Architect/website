@@ -38,8 +38,8 @@
           <h1 class="font-bold md:text-xl lg:text-2xl text-pearl-bush-300">
             Architect
           </h1>
-        </div> </NuxtLink
-      >a
+        </div>
+      </NuxtLink>
     </div>
   </div>
 </template>
