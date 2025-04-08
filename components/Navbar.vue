@@ -21,7 +21,7 @@
       <div
         class="flex items-center space-x-5 text-pearl-bush-100 md:text-lg lg:text-xl"
       >
-        <a href="#" class="cursor-pointer hover:font-bold"> Acceuil </a>
+        <a href="#" class="cursor-pointer hover:font-bold"> Accueil </a>
         <a href="#quisommesnous" class="cursor-pointer hover:font-bold"
           >Qui sommes nous</a
         >
@@ -30,7 +30,7 @@
           >Notre histoire</a
         >
       </div>
-      <Button>Get Started</Button>
+      <Button>Guide d'installation</Button>
     </div>
   </nav>
 </template>

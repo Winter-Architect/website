@@ -53,7 +53,7 @@
         >
           <Stat :nb="downloads.length" text="Téléchargements" />
           <Stat :nb="users.length" text="Joueurs uniques" />
-          <Stat :nb="connectedUsers.length" text="Joueurs connecté(s)" />
+          <Stat :nb="connectedUsers.length" text="Joueur(s) connecté(s)" />
         </div>
         <div class="h-[0.8px] w-[80vw] bg-pearl-bush-350" />
       </div>
@@ -190,9 +190,9 @@ const ressources = [
     icon: "i-logos-visual-studio-code",
   },
   {
-    name: "Vercel",
-    link: "https://vercel.com/",
-    icon: "i-logos-vercel-icon",
+    name: "Netlify",
+    link: "https://www.netlify.com/",
+    icon: "i-logos-netlify-icon",
   },
 ];
 </script>
