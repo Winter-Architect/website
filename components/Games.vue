@@ -9,7 +9,7 @@
         class="x-6 py-16 flex flex-col lg:flex-row items-center justify-evenly"
       >
         <img
-          src="https://placehold.co/535x340"
+          src="/blackout_banniere.png"
           alt=""
           class="rounded-lg shadow-lg w-[20vw] h-[15vw] object-cover object-center"
         />
