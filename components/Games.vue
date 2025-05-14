@@ -122,6 +122,46 @@
           >
         </div>
       </div>
+
+      <div class="my-10 mt-20">
+        <h1 class="font-bold text-3xl my-10 font-orbitron">IMAGES</h1>
+        <!-- Carrousel d'images -->
+        <div class="w-full flex flex-col items-center my-8">
+          <div class="relative w-[50vw] h-[40vh]">
+            <img
+              :src="carouselImages[carouselIndex]"
+              alt="Screenshot Blackout"
+              class="rounded-lg object-cover w-full h-full shadow-lg transition"
+            />
+            <button
+              class="absolute left-0 top-1/2 -translate-y-1/2 bg-pearl-bush-350 p-2 rounded-full shadow hover:bg-pearl-bush-400"
+              @click="prevImage"
+              aria-label="Précédent"
+            >
+              <Icon name="i-mdi-arrow-left" />
+            </button>
+            <button
+              class="absolute right-0 top-1/2 -translate-y-1/2 bg-pearl-bush-350 p-2 rounded-full shadow hover:bg-pearl-bush-400"
+              @click="nextImage"
+              aria-label="Suivant"
+            >
+              <Icon name="i-mdi-arrow-right" />
+            </button>
+          </div>
+          <div class="flex gap-2 mt-2">
+            <span
+              v-for="(img, idx) in carouselImages"
+              :key="idx"
+              class="w-2 h-2 rounded-full"
+              :class="
+                carouselIndex === idx
+                  ? 'bg-pearl-bush-400'
+                  : 'bg-pearl-bush-350'
+              "
+            ></span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -195,4 +235,21 @@ const ressources = [
     icon: "i-logos-netlify-icon",
   },
 ];
+
+const carouselImages = [
+  "https://placehold.co/350x220?text=Image+1",
+  "https://placehold.co/350x220?text=Image+2",
+  "https://placehold.co/350x220?text=Image+3",
+];
+
+const carouselIndex = ref(0);
+
+const prevImage = () => {
+  carouselIndex.value =
+    (carouselIndex.value - 1 + carouselImages.length) % carouselImages.length;
+};
+
+const nextImage = () => {
+  carouselIndex.value = (carouselIndex.value + 1) % carouselImages.length;
+};
 </script>
