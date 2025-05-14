@@ -11,10 +11,10 @@
         <img
           src="/blackout_banniere.png"
           alt=""
-          class="rounded-lg shadow-lg w-[20vw] h-[15vw] object-cover object-center"
+          class="rounded-lg shadow-lg w-[40vw] h-[25vw] object-cover object-center hidden md:block"
         />
         <div class="lg:w-1/2 lg:pl-12 my-10 lg:mt-0">
-          <h1 class="text-[36px] font-bold">Blackout</h1>
+          <h1 class="text-[36px] font-bold text-center">Blackout</h1>
           <div class="my-5">
             <p class="text-[16px] my-5">
               <strong>Blackout</strong> est un jeu de plateforme 3D et de
