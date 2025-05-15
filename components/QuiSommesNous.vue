@@ -4,7 +4,7 @@
     id="quisommesnous"
   >
     <img
-      src="https://placehold.co/400x200"
+      src="/photos/photo_equipe.jpeg"
       alt="Image 1"
       class="rounded-lg shadow-lg lg:w-1/2 w-[25vw] h-[25vw] object-cover object-center"
     />
