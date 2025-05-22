@@ -3,11 +3,18 @@
     class="container mx-auto px-6 py-16 flex flex-col lg:flex-row items-center"
     id="quisommesnous"
   >
-    <img
-      src="/photos/photo_equipe.jpeg"
-      alt="Image 1"
-      class="rounded-lg shadow-lg lg:w-1/2 w-[25vw] h-[25vw] object-cover object-center"
-    />
+    <div class="relative lg:w-1/2 w-[25vw] h-[25vw]">
+      <img
+        src="/photos/photo_equipe.jpeg"
+        alt="Image 1"
+        class="rounded-lg shadow-lg w-full h-full object-cover object-center"
+      />
+      <span
+        class="absolute bottom-2 right-2 bg-black bg-opacity-60 text-white text-sm px-3 py-2 rounded"
+      >
+        généré par ia
+      </span>
+    </div>
 
     <!-- Colonne droite (texte) -->
     <div class="lg:w-1/2 lg:pl-12 mt-10 lg:mt-0">
