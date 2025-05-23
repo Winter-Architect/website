@@ -30,7 +30,9 @@
           >Notre histoire</a
         >
       </div>
-      <Button>Guide d'installation</Button>
+      <Button pdfUrl="/docs/Dossier_d_exploitation_blackout.pdf"
+        >Guide d'installation</Button
+      >
     </div>
   </nav>
 </template>

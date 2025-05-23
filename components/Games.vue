@@ -14,7 +14,9 @@
           class="rounded-lg shadow-lg w-[40vw] h-[25vw] object-cover object-center hidden md:block"
         />
         <div class="lg:w-1/2 lg:pl-12 my-10 lg:mt-0">
-          <h1 class="text-[36px] font-bold text-center md:text-left">Blackout</h1>
+          <h1 class="text-[36px] font-bold text-center md:text-left">
+            Blackout
+          </h1>
           <div class="my-5">
             <p class="text-[16px] my-5">
               <strong>Blackout</strong> est un jeu de plateforme 3D et de
@@ -127,7 +129,7 @@
         <h1 class="font-bold text-3xl my-10 font-orbitron">IMAGES</h1>
         <!-- Carrousel d'images -->
         <div class="w-full flex flex-col items-center my-8">
-          <div class="relative w-[50vw] h-[40vh]">
+          <div class="relative w-[50vw] h-[60vh]">
             <img
               :src="carouselImages[carouselIndex]"
               alt="Screenshot Blackout"
@@ -237,9 +239,12 @@ const ressources = [
 ];
 
 const carouselImages = [
-  "https://placehold.co/350x220?text=Image+1",
-  "https://placehold.co/350x220?text=Image+2",
-  "https://placehold.co/350x220?text=Image+3",
+  "/images_jeu/Distributeurs.png",
+  "/images_jeu/finalRoom1.png",
+  "/images_jeu/le_style_de_la_camera.png",
+  "/images_jeu/look_at_the_wall.png",
+  "/images_jeu/slime_support.png",
+  "/images_jeu/slime2.png",
 ];
 
 const carouselIndex = ref(0);
