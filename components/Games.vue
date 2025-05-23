@@ -48,7 +48,7 @@
         </div>
       </div>
 
-      <div class="my-10">
+      <div class="my-10" v-if="successedToFetch">
         <h1 class="font-bold text-3xl font-orbitron">STATISTIQUES</h1>
         <div
           class="md:flex flex-col md:flex-row align-center justify-evenly my-10"
@@ -172,19 +172,27 @@
 const slider = ref(null);
 const isRight = ref(false);
 const isLeft = ref(true);
+let connectedUsers;
+let downloads;
+let users;
+let successedToFetch = true;
+try {
+  connectedUsers = await fetch(
+    "https://api.nocteln.fr/blackout/connectedUsers"
+  ).then((res) => res.json());
+  users = await fetch("https://api.nocteln.fr/blackout/users").then((res) =>
+    res.json()
+  );
 
-const connectedUsers = await fetch(
-  "https://api.nocteln.fr/blackout/connectedUsers"
-).then((res) => res.json());
-const users = await fetch("https://api.nocteln.fr/blackout/users").then((res) =>
-  res.json()
-);
-
-const downloads = await fetch("https://api.nocteln.fr/blackout/download").then(
-  (res) => res.json()
-);
+  downloads = await fetch("https://api.nocteln.fr/blackout/download").then(
+    (res) => res.json()
+  );
+} catch {
+  successedToFetch = false;
+}
 
 async function DownloadClicked() {
+  if (!successedToFetch) return;
   await fetch("https://api.nocteln.fr/blackout/download", {
     method: "POST",
   });
