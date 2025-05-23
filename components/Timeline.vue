@@ -40,5 +40,7 @@ const events = [
   { month: "Novembre", label: "Rédaction du cahier des charges" },
   { month: "Décembre", label: "Début du projet" },
   { month: "Janvier", label: "Première soutenance" },
+  { month: "Mars", label: "Deuxieme soutenance" },
+  { month: "Mai", label: "Rendu du projet" },
 ];
 </script>

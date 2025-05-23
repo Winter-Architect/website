@@ -29,12 +29,6 @@
         objectif est de créer des expériences interactives captivantes, en
         mêlant créativité et compétences techniques.
       </p>
-      <p class="mt-6 text-gray-400 text-sm leading-relaxed">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit odio
-        provident culpa aspernatur porro a saepe voluptate! At excepturi
-        quisquam labore ad natus dignissimos vitae esse est nesciunt, vero ab
-        dolorum tenetur explicabo illo dolore repudiandae asperiores aut.
-      </p>
     </div>
   </section>
 </template>
