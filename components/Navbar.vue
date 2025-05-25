@@ -8,7 +8,7 @@
         to="/"
         class="flex items-center space-x-2 transform transition-transform duration-300 ease-in-out hover:scale-110"
       >
-        <img src="/logo_light_bold.png" alt="logo" width="45" height="45" />
+        <img src="/logo_v2_without_bg.png" alt="logo" width="75" height="75" />
         <div class="flex flex-col">
           <h1 class="font-bold md:text-xl lg:text-2xl text-pearl-bush-100">
             Winter
